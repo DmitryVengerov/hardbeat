@@ -37,7 +37,7 @@ app.get('/profile/:name', function(req,res) {
 	//res.send('You are viewing the profile of '+ req.params.name );
 });
 
-app.listen(3000);
+app.listen(process.env.PORT);
 
 
 /*
