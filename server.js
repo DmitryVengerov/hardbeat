@@ -37,13 +37,11 @@ app.get('/profile/:name', function(req,res) {
 	//res.send('You are viewing the profile of '+ req.params.name );
 });
 
-
-
 app.listen(3000);
 
 
-
 /*
+
 var http = require('http');
 var fs	 = require('fs');
 
@@ -73,14 +71,22 @@ var server = http.createServer(function(req,res){
 });
 
 server.listen(3000, '127.0.0.1');
-console.log('yo dawgs, now listen to port 3000');
-*/
-
+console.log('yo dawgs, now listen to port 3000');*/
 /*
 meReadStream.on('data', function(chunk){
 	console.log('new chunk received:');
 	myWriteStream.write(chunk);
 	//console.log(chunk);
 });
+
 */
 
+
+var fs = require('fs');
+
+var file = fs.readFile('input.txt','utf8',function(err,data){
+    fs.writeFile('writeme.txt',data);
+    console.log(data);
+});
+
+console.log('This is an instruction outside the sync file system.');
