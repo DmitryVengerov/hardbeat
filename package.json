@@ -2,7 +2,7 @@
   "name": "task",
   "version": "1.0.0",
   "description": "none",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.15.3"

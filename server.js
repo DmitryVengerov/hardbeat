@@ -4,6 +4,8 @@ var	app = express();
 
 app.set('view engine', 'ejs');
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', function(req, res) {
 	//res.send("this is the homepage");
 	res.sendFile(__dirname + '/index.html');
@@ -19,7 +21,7 @@ app.get('/contact', function(req,res){
 
 app.get('/profile', function(req,res){
 	//res.send('you on profile');
-	res.sendFile(__dirname + '/profile.html');
+	res.render(__dirname + '/profile.html');
 });
 
 app.get('/profile/:name', function(req,res) {
@@ -32,12 +34,22 @@ app.get('/profile/:name', function(req,res) {
 			'fishing'
 		]
 	};
-
 	res.render('profile', { person : req.params.name, data : data}); 
 	//res.send('You are viewing the profile of '+ req.params.name );
 });
 
-app.listen(process.env.PORT);
+
+app.get('/cleverstudia', function(req,res){
+	//res.send("this is contactpage");
+	res.render('cleverstudia');
+});
+
+
+
+
+
+app.listen(3000, '127.0.0.1');
+//app.listen(process.env.PORT);
 
 
 /*
