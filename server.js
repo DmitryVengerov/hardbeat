@@ -38,15 +38,10 @@ app.get('/profile/:name', function(req,res) {
 	//res.send('You are viewing the profile of '+ req.params.name );
 });
 
-
 app.get('/cleverstudia', function(req,res){
 	//res.send("this is contactpage");
 	res.render('cleverstudia');
 });
-
-
-
-
 
 //app.listen(3000, '127.0.0.1');
 app.listen(process.env.PORT);
