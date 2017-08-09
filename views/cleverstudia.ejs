@@ -34,7 +34,7 @@
 		  margin-left: auto;
 		  margin-right: auto;
 		}
-		@media (min-width: 768px) {
+		@media (min-width: 766px) {
 		  .area {
 		    width: 750px;
 		  }
@@ -52,6 +52,7 @@
 		.navbar-component {
 		  background-color: #ffffff;
 		  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+		  margin-bottom: 120px;
 		}
 		.navbar-component > .navbar {
 		  justify-content: space-between;
@@ -165,74 +166,221 @@
 		  border-bottom-color: #5fc180;
 		}
 
+
+		.footer-component {
+			background-color: #17342f;
+		}
+
+		.footer {
+			justify-content: space-between;
+			
+		}
+
+		.footer-component > .footer {
+			justify-content: space-between
+		}
+		.footer-item {
+			color: white;
+			line-height: 60px;
+		}
+
+		.footer-input {
+			line-height: 10px;
+		    background-color: #5fc180;
+		    border: none;
+		    opacity: initial;
+		    border-radius: 50pc;
+		    margin: 12px;
+		    outline: none;
+		}
+
+		.footer > .footer-left {
+		  display: block;
+		  color: #777;
+		  margin: 0;
+		}
+
+		.flex-container-reviews {
+			overflow: hidden;
+			display: flex;
+			position: relative;
+			padding: 20px;
+			margin-left: 100px;
+			margin-right: 100px;
+			border-radius: 3px;
+			margin-top: 10px;
+			z-index: 1111;
+			background: #fff;
+			box-shadow: 0px 5px 15px #9b9b9b;
+		}
+
+		.flex-wrapper-reviews {
+			font-family: OpenSans-Light;
+			padding: 15px;
+			border: 1px solid #FFF;
+
+		  }
+
+		.flex-wrapper-reviews span {
+			font-family: OpenSans-LightItalic;
+			display: flex;
+			justify-content: flex-end;
+			 
+		}
+
+		.flex-item-reviews p {
+
+		}
+
+		.wrapper {
+			//padding: 100px;
+			border-radius: 3px;
+			margin-bottom: 150px;
+		}
+
+		.flex-wrapper-reviews img {
+			border-radius: 100px;
+			border: 5px solid #5FC180;
+			width: 120px;
+			height: 120px;
+		}
+
+		#parallelogram {
+			position: absolute;
+			width: 100%; 
+			height: 300px;
+			background: slategray;
+			transform: skewY(-1.5deg);
+			background-color: #5FC180;
+			z-index:1;
+		}
+
+		#background-reviews {
+			
+			position: absolute;
+			width: 100%; 
+			height: 300px;
+			background: slategray;
+			transform: skewY(-2deg);
+			background-color: #17342F;
+		  
+		}
+
+		.toTop_ {
+			top: 5px;
+		}
+
+
+
+
+
 	</style>
-
-	<script type="text/javascript">
-		(function() {
-
-  // Definition of caller element
-		  var getTriggerElement = function(el) {
-		    var isCollapse = el.getAttribute('data-collapse');
-		    if (isCollapse !== null) {
-		      return el;
-		    } else {
-		      var isParentCollapse = el.parentNode.getAttribute('data-collapse');
-		      return (isParentCollapse !== null) ? el.parentNode : undefined;
-		    }
-		  };
-
-		  // A handler for click on toggle button
-		  var collapseClickHandler = function(event) {
-		    var triggerEl = getTriggerElement(event.target);
-		    // If trigger element does not exist
-		    if (triggerEl === undefined) {
-		      event.preventDefault();
-		      return false;
-		    }
-
-		    // If the target element exists
-		    var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));
-		    if (targetEl) {
-		      triggerEl.classList.toggle('-active');
-		      targetEl.classList.toggle('-on');
-		    }
-		  };
-
-		  // Delegated event
-		  document.addEventListener('click', collapseClickHandler, false);
-
-		})(document, window);
-	</script>
 
 </head>
 <body>
-	    <!-- Component -->
-    <div class="navbar-component">
-      <!-- Class `area` is a container -->
-      <div class="navbar area">
-        <!-- Logo -->
-        <a href="#" class="brand">Brand</a>
-        <!-- List of links -->
-        <nav role="navigation" id="navigation" class="list">
-          <a href="#" class="item -link">Расписание</a>
-          <a href="#" class="item -link">Услуги</a>
-          <a href="#" class="item -link">Магазин</a>
-          <a href="#" class="item -link">FAQ</a>
-          <a href="#" class="item -link">О нас</a>
 
-          <span class="item"><i class="fa fa-search"></i></span>
-        </nav>
-        <!-- Button to toggle the display menu  -->
-        <button data-collapse data-target="#navigation" class="toggle">
-          <!-- Hamburger icon -->
-          <span class="icon"></span>
-        </button>
-      </div>
+    <div class="navbar-component">
+		<div class="navbar area">
+
+			<a href="#" class="brand">Brand</a>
+			<nav role="navigation" id="navigation" class="list">
+				<a href="#" class="item -link">Расписание</a>
+				<a href="#" class="item -link">Услуги</a>
+				<a href="#" class="item -link">Магазин</a>
+				<a href="#" class="item -link">FAQ</a>
+				<a href="#" class="item -link">О нас</a>
+
+				<span class="item">
+					<i class="fa fa-search"></i>
+				</span>
+			</nav>
+
+	        <button data-collapse data-target="#navigation" class="toggle">
+	        	<span class="icon"></span>
+	        </button>
+        </div>
     </div>
 
 
-	<h1>Welcome to cleverstudia!</h1>
-		
+    
+	<div id='background-reviews'><div id='parallelogram'></div></div>
+
+	<div class="wrapper">
+	  <div class="flex-container-reviews">
+	    <div class="flex-wrapper-reviews" >
+	      <img src="img/1.jpg">
+	    </div>
+	    <div class="flex-wrapper-reviews">
+	      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное 
+	      </p> 
+	      <span>
+	        Вероника Щелкунова
+	      </span>
+	    </div>    
+	  </div>
+
+	  <div class="flex-container-reviews ">
+	    <div class="flex-wrapper-reviews" >
+	      <img src="img/2.jpg">
+	    </div>
+	    <div class="flex-wrapper-reviews">
+	      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное  
+	      </p>
+	      <span>
+	        Вероника Щелкунова
+	      </span>
+	    </div>    
+	  </div>
+	</div>
+
+
+	
+	<div class="footer-component">
+		<div class="footer area">
+			<div class="footer-left">
+				<label class="footer-item">Политика конфиденциальности</label>
+				<span class="footer-item">Профессора Попова</span>
+				<span class="footer-item">8(812)308-51-81</span>
+			</div>
+			<input type="mail" name="" class="footer-input">
+			<span class="footer-item">© CLEVERSTUDIA 2016 все права защищены</span>
+		</div>
+	</div>
 
 </body>
+
+
+<script type="text/javascript">
+
+(function() {
+  var getTriggerElement = function(el) {
+    var isCollapse = el.getAttribute('data-collapse');
+    if (isCollapse !== null) {
+      return el;
+    } else {
+      var isParentCollapse = el.parentNode.getAttribute('data-collapse');
+      return (isParentCollapse !== null) ? el.parentNode : undefined;
+    }
+  };
+
+  // A handler for click on toggle button
+  var collapseClickHandler = function(event) {
+  	var triggerEl = getTriggerElement(event.target);
+    // If trigger element does not exist
+    if (triggerEl === undefined) {
+      event.preventDefault();
+      return false;
+    }
+    // If the target element exists
+    var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));
+    if (targetEl) {
+      triggerEl.classList.toggle('-active');
+      targetEl.classList.toggle('-on');
+    }
+  };
+  // Delegated event
+  document.addEventListener('click', collapseClickHandler, false);
+})(document, window);
+
+</script>
 </html>
