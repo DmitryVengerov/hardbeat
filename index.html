@@ -35,23 +35,42 @@
 			color: #FFF700;
 			border-bottom: 1px dotted transparent;
 		}
-		a:hover{
+
+		a:hover {
 			border-bottom-color: #FFF700;
 		}
 
-		
+		.modal {
+			display: none;
+			margin: auto;
+			width: 350px;
+			padding: 15px;
+			border: 1px solid;
+			border-radius: 3px;
+			background-color: rgba(39,29,53, 0.4);
+		}
+		.-active {
+			display: flex;
+		}
 		@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 			body { 
 				height: 100%;
 			}
 			
 		}
+
+
+
+
+
 	</style>
 </head>
 <body>
 	<h1>Welcome!</h1>
 	<p>You wont find a website better anywhere else... or not</p>
-	<p><a href="/cleverstudia">My Work! </a></p>	
+	<p><a href="/cleverstudia">My Work! </a></p>
+	<p><a for="modal" onclick="">About me</a></p>
+	<div class="modal">My name is Dmitrij and iam a developer </div>
 
 
 
