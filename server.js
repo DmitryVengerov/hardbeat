@@ -1,11 +1,11 @@
 var express = require('express');
 
 var	app = express();
+var path = require('path')
 
+
+app.use(express.static('./public'));
 app.set('view engine', 'ejs');
-
-app.use(express.static(__dirname + '/public'));
-
 app.get('/', function(req, res) {
 	//res.send("this is the homepage");
 	res.sendFile(__dirname + '/index.html');
@@ -21,7 +21,7 @@ app.get('/contact', function(req,res){
 
 app.get('/profile', function(req,res){
 	//res.send('you on profile');
-	res.render(__dirname + '/profile.html');
+	res.render(__dirname + '/profile');
 });
 
 app.get('/profile/:name', function(req,res) {
@@ -43,8 +43,10 @@ app.get('/cleverstudia', function(req,res){
 	res.render('cleverstudia');
 });
 
-//app.listen(3000, '127.0.0.1');
-app.listen(process.env.PORT);
+
+
+app.listen(3000, '127.0.0.1');
+//app.listen(process.env.PORT);
 
 
 /*
@@ -87,13 +89,5 @@ meReadStream.on('data', function(chunk){
 });
 
 */
-
-
-var fs = require('fs');
-
-var file = fs.readFile('input.txt','utf8',function(err,data){
-    fs.writeFile('writeme.txt',data);
-    console.log(data);
-});
 
 console.log('This is an instruction outside the sync file system.');

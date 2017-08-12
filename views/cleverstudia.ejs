@@ -16,6 +16,9 @@
 		  line-height: 20px;
 		  margin: 0;
 		}
+		input {
+			outline: none;
+		}
 
 		*,
 		*:before,
@@ -135,12 +138,13 @@
 		    top: 64px;
 		    left: 0;
 		    width: 100%;
-		    overflow-y: hidden;
+		   overflow-y: hidden;
 		    overflow-x: auto;
 		    border-top: 1px solid #dddddd;
 		    background-color: #ffffff;
 		        z-index: 1112;
-    overflow: hidden
+    	
+    	//overflow: hidden
 		  }
 
 
@@ -251,6 +255,31 @@
 			height: 120px;
 		}
 
+
+		.footer-input{
+			display: flex;
+			height: 35px;
+			padding: 0.5em;
+		}
+
+		.footer-input input[type="mail"]{
+			border: none;
+			margin-left: 10px;
+		    background-color: transparent;
+		    text-decoration: none;
+		    color: white;
+		    	opacity: none;
+		    cursor: pointer;
+
+		}
+
+		.footer-input input[type="submit"] {
+			border:none;
+			color: white;
+			//margin: 15px;
+			opacity: none;
+			background-color: transparent;
+		}
 		#parallelogram {
 			position: absolute;
 			width: 100%; 
@@ -296,11 +325,6 @@
 
 			.navbar-componetn { margin-bottom: 40px; }
 		}
-
-
-
-
-
 	</style>
 
 </head>
@@ -311,7 +335,7 @@
 
 			<a href="#" class="brand">Brand</a>
 			<nav role="navigation" id="navigation" class="list">
-				<a href="#" class="item -link">Расписание</a>
+				<a href="/cleverstudia" class="item -link">Расписание</a>
 				<a href="#" class="item -link">Услуги</a>
 				<a href="#" class="item -link">Магазин</a>
 				<a href="#" class="item -link">FAQ</a>
@@ -335,7 +359,7 @@
 	<div class="wrapper">
 	  <div class="flex-container-reviews">
 	    <div class="flex-wrapper-reviews" >
-	      <img src="img/1.jpg">
+	      <img src="/public/img/1.jpg">
 	    </div>
 	    <div class="flex-wrapper-reviews">
 	      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное 
@@ -348,7 +372,7 @@
 
 	  <div class="flex-container-reviews ">
 	    <div class="flex-wrapper-reviews" >
-	      <img src="img/2.jpg">
+	      <img src="/public/img/2.jpg">
 	    </div>
 	    <div class="flex-wrapper-reviews">
 	      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное  
@@ -367,7 +391,11 @@
 				<span class="footer-item">Профессора Попова</span>
 				<span class="footer-item">8(812)308-51-81</span>
 			</div>
-			<input type="mail" name="" class="footer-input">
+			<div class="footer-input">
+				<input type="mail" name="validateMail" class="">
+				<input type="submit" name="validation" value="OK">
+			</div>
+			
 			<span class="footer-item">© CLEVERSTUDIA 2016 все права защищены</span>
 		</div>
 	</div>
@@ -381,11 +409,12 @@
   var getTriggerElement = function(el) {
     var isCollapse = el.getAttribute('data-collapse');
     if (isCollapse !== null) {
+    	//console.log('ok');
       return el;
-    } else {
-      var isParentCollapse = el.parentNode.getAttribute('data-collapse');
-      return (isParentCollapse !== null) ? el.parentNode : undefined;
-    }
+    } //else {
+      //var isParentCollapse = el.parentNode.getAttribute('data-collapse');
+      //return (isParentCollapse !== null) ? el.parentNode : undefined;
+    //}
   };
 
   // A handler for click on toggle button
@@ -398,6 +427,7 @@
     }
     // If the target element exists
     var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));
+    console.log(targetEl)
     if (targetEl) {
       triggerEl.classList.toggle('-active');
       targetEl.classList.toggle('-on');
@@ -406,6 +436,8 @@
   // Delegated event
   document.addEventListener('click', collapseClickHandler, false);
 })(document, window);
+
+
 
 </script>
 </html>
