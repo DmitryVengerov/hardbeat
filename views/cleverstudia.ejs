@@ -56,7 +56,7 @@
 		.navbar-component {
 		  background-color: #ffffff;
 		  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
-		  margin-bottom: 120px;
+		  
 		}
 		.navbar-component > .navbar {
 		  justify-content: space-between;
@@ -205,7 +205,8 @@
 		}
 
 		.footer > .footer-left {
-		  display: block;
+
+		  display: flex;
 		  color: #777;
 		  margin: 0;
 		}
@@ -268,8 +269,9 @@
 		    background-color: transparent;
 		    text-decoration: none;
 		    color: white;
-		    	opacity: none;
+		    opacity: none;
 		    cursor: pointer;
+
 
 		}
 
@@ -305,12 +307,13 @@
 			top: 5px;
 		}
 
+		.temp-img { margin: 15px; background-color: red; width: 30px;height: 30px; }
+		.temp-ava {border-radius: 100px;border: 5px solid #5FC180;width: 120px;height: 120px; background-color: red;}
+		.banner {margin-bottom: 120px;height: 400px;width: 100%; background-color: red;}
 		@media only screen and (min-device-width : 360px) and (max-device-width : 667px) {
 
 			#parallelogram, #background-reviews {
-
 				height: 750px;
-
 			}
 
 			.flex-container-reviews{
@@ -318,6 +321,16 @@
 				margin-left: 0px;
 				border-radius: 0px;
 			}
+			.footer-component > .footer {
+				display: flex;
+				flex-wrap: column;
+			}
+
+			.footer-item {margin: auto;margin-top:-15px; }
+			.footer-input input[type="mail"] {width: 85%;}
+			.footer-input {width: 100%;}
+
+			.footer > .footer-left {display: none;}
 
 			img {
 				display: none;
@@ -352,14 +365,17 @@
         </div>
     </div>
 
+    <div class="banner"></div>
 
+    <div class="">
+    	
+    </div>
     
 	<div id='background-reviews'><div id='parallelogram'></div></div>
-
 	<div class="wrapper">
 	  <div class="flex-container-reviews">
 	    <div class="flex-wrapper-reviews" >
-	      <img src="/public/img/1.jpg">
+	      <img class = 'temp-ava'>
 	    </div>
 	    <div class="flex-wrapper-reviews">
 	      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное 
@@ -372,7 +388,7 @@
 
 	  <div class="flex-container-reviews ">
 	    <div class="flex-wrapper-reviews" >
-	      <img src="/public/img/2.jpg">
+	      <img class = 'temp-ava'>
 	    </div>
 	    <div class="flex-wrapper-reviews">
 	      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное  
@@ -387,15 +403,17 @@
 	<div class="footer-component">
 		<div class="footer area">
 			<div class="footer-left">
-				<label class="footer-item">Политика конфиденциальности</label>
+				<img class="temp-img">
 				<span class="footer-item">Профессора Попова</span>
+				<img class="temp-img">
 				<span class="footer-item">8(812)308-51-81</span>
 			</div>
 			<div class="footer-input">
 				<input type="mail" name="validateMail" class="">
 				<input type="submit" name="validation" value="OK">
 			</div>
-			
+			<img class="temp-img">
+			<img class="temp-img">		
 			<span class="footer-item">© CLEVERSTUDIA 2016 все права защищены</span>
 		</div>
 	</div>
