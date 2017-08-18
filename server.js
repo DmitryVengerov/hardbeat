@@ -1,27 +1,39 @@
-var express = require('express');
 
-var	app = express();
-var path = require('path')
+var express = require('express'),
+	app     = express(),
+	path    = require('path'),
+	fs 		= require('fs');
 
+var stylus = require('stylus')
+var nib = require('nib')
 
-app.use(express.static('./public'));
 app.set('view engine', 'ejs');
+
+function compile(str, path) {
+    return stylus(str)
+        .set('filename', path)
+        .use(nib())
+}
+
+// tell node to compile.styl-files to normal css-files
+app.use(stylus.middleware({
+    src: __dirname + '/public',
+    compile: compile
+}))
+
+app.use(express.static(__dirname + '/public'))
+
+
 app.get('/', function(req, res) {
-	//res.send("this is the homepage");
-	res.sendFile(__dirname + '/index.html');
+	res.render('index')
 });
 
 app.get('/contact', function(req,res){
-	//res.send("this is contactpage");
 	res.sendFile(__dirname + '/contact.html');
 });
 
-
-// routing on profile
-
 app.get('/profile', function(req,res){
-	//res.send('you on profile');
-	res.render(__dirname + '/profile');
+	res.render('profile');
 });
 
 app.get('/profile/:name', function(req,res) {
@@ -39,14 +51,11 @@ app.get('/profile/:name', function(req,res) {
 });
 
 app.get('/cleverstudia', function(req,res){
-	//res.send("this is contactpage");
 	res.render('cleverstudia');
 });
 
-
-
-//app.listen(3000, '127.0.0.1');
-app.listen(process.env.PORT);
+app.listen(3000, '127.0.0.1');
+//app.listen(process.env.PORT);
 
 
 /*
@@ -90,4 +99,4 @@ meReadStream.on('data', function(chunk){
 
 */
 
-console.log('This is an instruction outside the sync file system.');
+console.log('We ready to work');

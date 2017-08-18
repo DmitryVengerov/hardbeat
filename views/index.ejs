@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body>
+	
+	<h1>Welcome!</h1>
+ 
+	<p>You wont find a website better anywhere else... or not</p>
+	<p><a href="/cleverstudia">My Work!</a></p>
+	<p><button data-collapse data-target="#modal" class="button-master">About me</button></p>
+	<div id="modal" class="modal" role='modal'>
+		My name is Dmitrij and iam a developer<p> 
+		</p>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+
+(function() {
+  var getTriggerElement = function(el) {
+    var isCollapse = el.getAttribute('data-collapse');
+    if (isCollapse !== null) {
+      console.log(isCollapse);
+      return el;
+    } else {
+      var isParentCollapse = el.parentNode.getAttribute('data-collapse');
+      console.log(parentNode);
+      return (isParentCollapse !== null) ? el.parentNode : undefined;
+    }
+  };
+  // A handler for click on toggle button
+  var collapseClickHandler = function(event) {  
+  	var triggerEl = getTriggerElement(event.target);
+    if (triggerEl === undefined) {
+      event.preventDefault();
+      return false;
+    }
+    // If the target element exists
+    var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));
+    if (targetEl) {
+      //triggerEl.classList.toggle('-active');
+      targetEl.classList.toggle('-active');
+    }
+  };
+  // Delegated event
+  document.addEventListener('click', collapseClickHandler, false);
+})(document, window);
+
+</script>
+</html>

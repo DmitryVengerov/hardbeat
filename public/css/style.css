@@ -1,0 +1,80 @@
+html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: helvetica;
+    }
+
+    body {
+      background: linear-gradient(65deg, #35A39A 30%, #271D35 100%) ;
+      font-family: verdana;
+      color: #fff;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FFF700;
+      border-bottom: 1px dotted transparent;
+    }
+
+    a:hover {
+      border-bottom-color: #FFF700;
+    }
+
+    .modal {
+      display: none;
+      margin: auto;      
+      padding: 15px;
+      border: 2px solid #FFF700;
+      //box-shadow: 1px 1px 50px #FFF700;
+      border-radius: 3px;
+      background-color: rgba(39,29,53, 0.4);
+      order: initial;
+      min-width: auto;
+      max-width: 400px;
+      transition: all 0.3s linear 0s;
+    }
+
+    .-active {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .button-master {
+      border: 2px solid #FFF700;
+      color: #FFF700;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px; 
+      border-radius: 40px;
+      background-color: transparent;
+      text-decoration: none;
+      text-transform: uppercase;
+      outline: none;
+      cursor: pointer;
+    }
+
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+      body { 
+        height: 100%;
+      }
+    }
+
+    
+
+
