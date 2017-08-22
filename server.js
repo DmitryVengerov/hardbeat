@@ -28,15 +28,8 @@ app.get('/', function(req, res) {
 	res.render('index')
 });
 
-app.get('/contact', function(req,res){
-	res.sendFile(__dirname + '/contact.html');
-});
 
-app.get('/profile', function(req,res){
-	res.render('profile');
-});
-
-app.get('/profile/:name', function(req,res) {
+app.get('/profile', function(req,res) {
 	var data = {
 		age : 20,
 		job : 'developer',
@@ -46,7 +39,9 @@ app.get('/profile/:name', function(req,res) {
 			'fishing'
 		]
 	};
-	res.render('profile', { person : req.params.name, data : data}); 
+	res.render('profile', { 
+		person : req.params.name, 
+		data : data}); 
 	//res.send('You are viewing the profile of '+ req.params.name );
 });
 
