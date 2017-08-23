@@ -1,16 +1,25 @@
-
-
 html, body {
-  height: 100%;
-  overflow: hidden;
-  font-family: helvetica;
+	height: 100%;
+  	margin: 0;
+  	font-family: Verdana, Arial, sans-serif;
 }
 
 body {
-	background: linear-gradient(65deg, #292929 30%, #262626 100%) ;
+	background: linear-gradient(65deg, #292929 30%, #262626 100%) repeat ;
 	font-family: verdana;
 	color: #fff;
-	padding: 30px;
+}
+
+header {
+	height: 40px;
+	border-bottom: 1px dotted #B28A24;
+	background-color: #262626;
+	margin-bottom:3em;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 h1 {
@@ -23,11 +32,25 @@ h1 {
 p {
 	font-size: 16px;
 	text-align: center;
-}
+} 
+
+h1    ::selection, 
+h2    ::selection,
+h3    ::selection,
+h4    ::selection,
+p     ::selection,  
+a     ::selection,
+button::selection,
+div   ::selection,
+header::selection{
+	background: rgba(173, 145,74,0.9); /* Safari */
+	color: #fff;
+}	
 
 a {
 	text-decoration: none;
 	color: #B28A24;
+	margin-bottom: 20px;
 	border-bottom: 1px solid #B28A24;
 }
 
@@ -36,16 +59,39 @@ a:hover {
 }
 
 div {
-	    transition: all 0.3s linear 0s;
+	transition: all 0.3s linear 0s;
 }
+
+img {
+	//background-image: url(/img/logo.svg);
+	width: 202px;
+	height: 202px;
+	border-radius: 100px;
+	color: white;
+}
+
+.name {
+	line-height: 40px;
+	border-bottom: 1px solid #B28A24;
+	cursor: pointer;
+}
+
+.name::hover {
+	border-bottom: 2px solid #B28A24;
+}
+
+.name::selection {
+	color: #B28A24;
+}
+
 .modal {
 	display: none;
 	margin: auto;
 	padding: 15px;
-	//border: 2px solid #B28A24;
+	border-left: 5px solid  #B28A24;
+	box-shadow: 1px 1px 30px #B28A24;
 	border-left-color: #B28A24;
-	border-bottom-color: #5fc180;
-	border-radius: 3px;
+	border-radius: 1px;
 	background-color: rgba(39,29,53, 0.4);
 	order: initial;
 	min-width: auto;
@@ -60,9 +106,17 @@ div {
 	transition: all 0.3s linear 0s;
 }
 
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
 .button-master {
 	border: 2px solid #B28A24;
 	color: #B28A24;
+	margin: 20px 0px 20px 0px; 
 	cursor: pointer;
 	text-align: center;
 	font-size: 12px;
@@ -74,6 +128,22 @@ div {
 	text-decoration: none;
 	text-transform: uppercase;
 	outline: none;
+}
+
+.logo-brand {
+	width:  202px;
+	height: 202px;
+	border-radius: 100px;
+	border-bottom: 5px solid #B28A24;
+	box-shadow: 1px 1px 30px #B28A24;
+	//background-image: url(/img/logo.svg);
+	box-shadow:0 5px 15px 0 rgba(178,138,36,.1), 0 15px 35px 0 rgba(178,138,36,.5)
+}
+
+.vk--logo__link {
+	width: 30px;
+	height: 30px;
+	background-image: url('/icons/vk.svg');
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {

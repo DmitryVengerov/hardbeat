@@ -3,11 +3,12 @@
 <head>
 	<title></title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  
   <style type="text/css">
   	
   	body {
   		overflow: auto;
+  		padding: 0px;
   		background: white !important;
   	}
 
@@ -15,28 +16,49 @@
   		display: flex;
   		flex-wrap: wrap;
   		justify-content: center;
+  		padding: 20px;
   	}
   	.contaiter {
-  		margin: 6px;
-  		width: 300px;
-  		padding: 20px;
-  		border-radius: 2px;
+  		margin: 40px;
+  		width: 278px;
+  		
+  		border-radius: 20px;
   		background-color: #E9F5F1;
   		color: #393B3B;
+
   	}
 
+  	.img-temp {
+  		height: 200px;
+  		background-color: pink;
+  		margin-bottom: 1em;
+  		width: 278px;
+  		display: flex;
+  		align-items: center;	
+  		justify-content: center;
+  	}
+
+  	.icon {
+  		width: 120px;
+  		height: 120px;
+  		border-radius: 100px;
+  		margin: 3em;
+  		border: 5px solid #00B2A6;
+  		background-color: white;
+  	}
   	.contaiter__header {
   		text-align: center;
+  		padding-bottom: 20px;
+  		height: 40px;
   		margin-bottom: 10px;
   		font-size: 18px;
   	}
 
   	.contaiter__data {
   		margin-top: 25PX;
-  	}
-
-  	.contaiter__data > .{
-  		margin-top: 25PX;
+  		padding: 20px 20px 20px 20px;
+  		display: flex;
+  		justify-content: space-between;
   	}
 
   	#swither {
@@ -46,13 +68,22 @@
   		margin: 5px;
   		font-size: 16px;
   		color: #00B2A6;
-  		border-radius: 50px;
-  		border: 1px solid #00B2A6;
+  		border-radius: 20px;
+  		border: 5px solid #00B2A6;
   	}
+
   	#swither:active {
   		background-color: #00B2A6;
   		color: white;
   	}
+
+
+  	.review {
+  		width: auto;
+  		height: 709px;
+  		background-color: #00B2A6;
+  		margin: 2em 0em 2em 0em;
+  	}	
 
   </style>
 </head>
@@ -61,18 +92,26 @@
 	<p><button id='swither'>курсы</button><button id='swither'> мастер-класс</button></p>
 
 	<div class="wrapper">
-		<% data.hobbies.forEach(function(item){ %>	
+		<% data.hobbies.forEach(function(item){ %>
+			
 		<div class="contaiter">		
+			<div class="img-temp">
+				<div class="icon"></div>
+			</div>	
 			<div class="contaiter__header"><%= item %></div>
 
 			<div class="contaiter__data">
 			<% data.master.forEach(function(item1){ %>
-				<span class=""><%= item1 %></span>
+				<span ><%= item1 %></span>
 			<%})%>
-			<span class="">ff</span>
+			<span >16 мест</span>
 			</div>
 		</div>
 		<%})%>
+	</div>
+
+
+	<div class="review">
 	</div>
 
 

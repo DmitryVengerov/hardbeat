@@ -1,8 +1,11 @@
 
 var express = require('express'),
 	app     = express(),
+	http = require('http'),
 	path    = require('path'),
-	fs 		= require('fs');
+	fs 		= require('fs'),
+	colors  = require('colors'),
+	_       = require('underscore')
 
 var stylus = require('stylus')
 var nib = require('nib')
@@ -15,19 +18,17 @@ function compile(str, path) {
         .use(nib())
 }
 
-// tell node to compile.styl-files to normal css-files
+/* tell node to compile.styl-files to normal css-files
 app.use(stylus.middleware({
     src: __dirname + '/public',
     compile: compile
 }))
-
+*/
 app.use(express.static(__dirname + '/public'))
-
 
 app.get('/', function(req, res) {
 	res.render('index')
 });
-
 
 app.get('/profile', function(req,res) {
 	var data = {
@@ -48,7 +49,7 @@ app.get('/profile', function(req,res) {
 			"Скетчинг маркерами"
 		],
 		master: [
-			"Каждое воскресенье",
+			"21.08.17",
 		]
 	};
 
@@ -66,6 +67,7 @@ app.get('/profile', function(req,res) {
 app.get('/cleverstudia', function(req,res){
 	res.render('cleverstudia');
 });
+
 
 //app.listen(3000, '127.0.0.1');
 app.listen(process.env.PORT);
@@ -111,5 +113,4 @@ meReadStream.on('data', function(chunk){
 });
 
 */
-
-console.log('We ready to work');
+console.log('We ready to work'.red);

@@ -6,15 +6,22 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-	
-	<h1>Welcome!</h1>
- 
-	<p>You wont find a website better anywhere else... or not... who cares?</p>
-	<p><a href="/cleverstudia">My Work!</a></p>
-	<p><button data-collapse data-target="#modal" class="button-master">About me</button></p>
+
+  <header>
+    <a class="name" href="https:/www.vk.com/vengerov1">Vengerov Dmitij</a>
+  </header>
+
+	<div class="wrapper">
+  	<p>You wont find a website better anywhere else... or not... who cares?</p>
+  	<a href="/cleverstudia">My Work!</a>
+      <img class='logo-brand' src="/img/logo.jpg">
+    
+  	<button data-collapse data-target="#modal" class="button-master">About me</button>
+  </div>
+
 	<div id="modal" class="modal" role='modal'>
     <div class="modal__inner">
-          <p>My name is Dmitrij and iam a developer from <italic>Saint-Petersburg</italic> </p>   
+          <p>My name is Dmitrij and iam a developer from Saint-Petersburg</p>   
     </div>	
 	</div>
 
@@ -33,10 +40,12 @@
       console.log(parentNode);
       return (isParentCollapse !== null) ? el.parentNode : undefined;
     }
+
   };
   // A handler for click on toggle button
   var collapseClickHandler = function(event) {  
   	var triggerEl = getTriggerElement(event.target);
+    console.log(triggerEl.value)
     if (triggerEl === undefined) {
       event.preventDefault();
       return false;
