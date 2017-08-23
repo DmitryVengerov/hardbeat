@@ -2,52 +2,76 @@
 <html>
 <head>
 	<title></title>
-	<style type="text/css">
 
-		body {
-			background: skyblue;
-			font-family: verdana;
-			color: #fff;
-			padding: 30px;
-		}
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <style type="text/css">
+  	
+  	body {
+  		overflow: auto;
+  		background: white !important;
+  	}
 
-		h1 {
-			font-size: 48px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			text-align: center;
-		}
+  	.wrapper {
+  		display: flex;
+  		flex-wrap: wrap;
+  		justify-content: center;
+  	}
+  	.contaiter {
+  		margin: 6px;
+  		width: 300px;
+  		padding: 20px;
+  		border-radius: 2px;
+  		background-color: #E9F5F1;
+  		color: #393B3B;
+  	}
 
-		h2 {
-			font-size: 30px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			text-align: center;
-		}
+  	.contaiter__header {
+  		text-align: center;
+  		margin-bottom: 10px;
+  		font-size: 18px;
+  	}
 
-		p {
-			font-size: 16px;
-			text-align: center;
-		}
+  	.contaiter__data {
+  		margin-top: 25PX;
+  	}
 
-		li {
-			font-size: 16px;
-			text-align: center;
-		}
 
-	</style>
+  	#swither {
+  		background-color: transparent;
+  		outline: none;
+  		padding:10px 25px 10px 25px;
+  		margin: 5px;
+  		font-size: 16px;
+  		color: #00B2A6;
+  		border-radius: 50px;
+  		border: 1px solid #00B2A6;
+  	}
+  	#swither:active {
+  		background-color: #00B2A6;
+  		color: white;
+  	}
+
+  </style>
 </head>
 <body>
-	<h1>Welcome to Profile of <%= person  %></h1>
-	<p><strong>Age:</strong><%= data.age %></p>
-	<p><strong>Age:</strong><%= data.job %></p>
-	<h2>Hobbies</h2>
-	<ul>
-		<% data.hobbies.forEach(function(item){ %>
-		<li><%= item %></li>
-	<%
-		})
-		%>
-	</ul>
+	
+	<p><button id='swither'>курсы</button><button id='swither'> мастер-класс</button></p>
+
+	<div class="wrapper">
+		<% data.hobbies.forEach(function(item){ %>	
+		<div class="contaiter">		
+			<div class="contaiter__header"><%= item %></div>
+
+			<div class="contaiter__data">
+			<% data.master.forEach(function(item1){ %>
+				<span><%= item1 %></span>
+			<%})%>
+			<span>ff</span>
+			</div>
+		</div>
+		<%})%>
+	</div>
+
+
 </body>
 </html>

@@ -31,17 +31,35 @@ app.get('/', function(req, res) {
 
 app.get('/profile', function(req,res) {
 	var data = {
-		age : 20,
-		job : 'developer',
 		hobbies : [
-			'eating',
-			'fighting',
-			'fishing'
+			'Детские занятия 7-12 лет',
+			'Детские занятия 4-6 лет',
+			'Живопись маслом',
+			'Интерьерный скетчинг',
+			"Фэшн иллюстрация",
+			"Графический дизайн",
+			"Базовый курс рисунка",
+			"Компьютерная иллюстрация",
+			"Основы каллиграфии",
+			"Тревел-скетчинг",
+			"Основы акварели",
+			"Современная каллиграфии",
+			"иллюстрация ПРО",
+			"Скетчинг маркерами"
+		],
+		master: [
+			"Каждое воскресенье",
 		]
 	};
+
+	var data1 = {
+		title: "первый",
+		data : "20.02",
+		place: "16"
+	};
 	res.render('profile', { 
-		person : req.params.name, 
-		data : data}); 
+		data : data, data1
+	}); 
 	//res.send('You are viewing the profile of '+ req.params.name );
 });
 
