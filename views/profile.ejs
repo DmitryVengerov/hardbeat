@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <style type="text/css">
   	
@@ -35,6 +35,9 @@
   		margin-top: 25PX;
   	}
 
+  	.contaiter__data > .{
+  		margin-top: 25PX;
+  	}
 
   	#swither {
   		background-color: transparent;
@@ -64,9 +67,9 @@
 
 			<div class="contaiter__data">
 			<% data.master.forEach(function(item1){ %>
-				<span><%= item1 %></span>
+				<span class=""><%= item1 %></span>
 			<%})%>
-			<span>ff</span>
+			<span class="">ff</span>
 			</div>
 		</div>
 		<%})%>
