@@ -151,6 +151,9 @@ img {
 		height: 100%;
 	}
 
+	p {
+		margin: 4px;
+	}
 }
 
 
