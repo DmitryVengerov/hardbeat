@@ -147,6 +147,12 @@ img {
 	background-image: url('/icons/vk.svg');
 }
 
+.js--logo {
+	width: 30px;
+	height: 30px;
+	background-image: url(/icons/js.svg);
+}
+
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 	body { 
 		height: 100%;

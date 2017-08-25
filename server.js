@@ -63,6 +63,11 @@ app.get('/cleverstudia', function(req,res){
 	res.render('cleverstudia');
 });
 
+app.get('/art', function(req,res) {
+	res.render('art');
+});
+
+
 
 //app.listen(3000, '127.0.0.1');
 app.listen(process.env.PORT);
