@@ -400,10 +400,10 @@ top: 5px;
 	font-size: 18px !important;
 }
 
-.icon--list p {
+.icon--list h1 {
 	display: flex;
 	justify-content: center;
-	font-size: 22px;
+	
 	margin-bottom: -20px; 
 }
 
@@ -462,27 +462,30 @@ top: 5px;
 }
 
 .new--rewievs {
-	height: 400px;
+	min-height: 400px;
 	background-color: rgba(0, 178, 166, 1);
+	background-image: url(/img/pattern-01.png);
 }
 
 .new--rewievs__flex {
+	min-height: 400px;
+	background-image: url(/icons/pattern-01.png);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
+	//background-image: url(/img/art.png);
 }
 .new--rewievs__flex-box {
 	margin: 50px;
-	height: 300px;
+	height: auto;
 	width: 80%;
 	background-color: #fff;
-	padding: 40px;
+	padding: 30px;
 	border-radius: 5px;
 }
 
 .pattern {
-	height: 400px;
 	background-image: url(/icons/pattern-01.png);
 	position: absolute;
 }
@@ -499,27 +502,41 @@ top: 5px;
 	height: 176px;
 	width: 250px;
 	margin-right: 60px;
+	border-radius: 6PX;
+	color: #fff;
+	padding: 30px; 	
 	background:rgba(0, 178, 166, 1);
 }
 
 .stage--first {
+	margin: 20PX;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: center;
 }
-.stage--first {
 
-}
 
 .stage--second {
-
+	margin: 20PX;
+		display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 .stage--third { 
-
+	margin: 20PX;
+		display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 .stage--fourd {
-
+	margin: 20PX;
+			display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
 }
