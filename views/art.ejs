@@ -85,24 +85,79 @@
 
 		<div class="stage--second">
 			<img src="/img/stage-2.png" width="250" height="176" style="margin-right: 60PX; ">
-
 			<div class="stage--text">
 			</div>
-
 		</div>
+
 		<div class="stage--third">
-						<div class="stage--text">
-				
+			<div class="stage--text">
 			</div>
 			<img src="/img/stage-3.png" width="250" height="176">
 		</div>
+
 		<div class="stage--fourd">
-		<img src="/img/stage-4.png" width="250" height="176" style="margin-right: 60PX; ">
+			<img src="/img/stage-4.png" width="250" height="176" style="margin-right: 60PX; ">
 			<div class="stage--text">
-				
 			</div>
-			
 		</div>
+	</div>
+
+	<div class="price--list">
+		<h1>О стоимости</h1>
+		<div class="price--list__wrapper">
+			<div class="price--list__left-block">
+				<h5>Свободная тема</h5>
+				<ul>
+					<li>20х30 см - 1500 ₽</li>
+					<li>30х30 см - 1900 ₽</li>
+					<li>30х40 см - 2350 ₽</li>
+					<li>40х40 см - 2600 ₽</li>
+					<li>40х50 см - 2900 ₽</li>
+					<li>50х50 см - 3500 ₽</li>
+					<li>50х70 см - 4200 ₽</li>
+					<li>60х80 см - 5900 ₽</li>
+				</ul>
+			</div>
+			<div class="price--list__right-block">
+				<h5>Тематический мастер класс</h5>
+				<ul>
+					<li>20х30 см - 990 ₽</li>
+					<li>30х30 см - 1350 ₽</li>
+					<li>30х40 см - 1650 ₽</li>
+					<li>40х40 см - 1800 ₽</li>
+					<li>40х50 см - 1950 ₽</li>
+					<li>50х50 см - 2400 ₽</li>
+					<li>50х70 см - 2900 ₽</li>
+					<li>60х80 см - 4150 ₽</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="little--banner">
+		<div class="pattern--banner">
+			<h3>СКИДКА 30 % НА ТЕМАТИЧЕСКИЕ МАСТЕР-КЛАССЫ</h3>
+		</div>
+	</div>
+	<div class='wrapper--center'>	
+		<div class="wrapper">
+			<% data.hobbies.forEach(function(item){ %>	
+			<div class="contaiter">		
+				<div class="img--temp">
+					<div class="icon">    
+	        		</div>
+				</div>	
+				<div class="contaiter__header"><%= item %></div>
+				<div class="contaiter__data">
+				<% data.master.forEach(function(item1){ %>
+					<span ><%= item1 %></span>
+				<%})%>
+				<span >16 мест</span>
+				</div>
+			</div>
+			<%})%>
+		</div>
+		<button>Еще больше работ тематических дней</button>
 	</div>
 
 </body>

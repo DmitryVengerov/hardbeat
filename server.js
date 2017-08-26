@@ -64,13 +64,39 @@ app.get('/cleverstudia', function(req,res){
 });
 
 app.get('/art', function(req,res) {
-	res.render('art');
+	var data = {
+		hobbies : [
+			'Детские занятия 7-12 лет',
+			'Детские занятия 4-6 лет',
+			'Живопись маслом',
+			'Интерьерный скетчинг',
+			"Фэшн иллюстрация",
+			"Графический дизайн",
+			"Базовый курс рисунка",
+			"Компьютерная иллюстрация",
+			"Основы каллиграфии"
+		],
+		master: [
+			"21.08.17",
+		]
+	};
+
+	var data1 = {
+		title: "первый",
+		data : "20.02",
+		place: "16"
+	};
+	res.render('art', { 
+		data : data, data1
+	}); 
+	//res.send('You are viewing the profile of '+ req.params.name );
 });
 
 
 
-//app.listen(3000, '127.0.0.1');
-app.listen(process.env.PORT);
+
+app.listen(3000, '127.0.0.1');
+//app.listen(process.env.PORT);
 
 
 /*
