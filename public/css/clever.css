@@ -35,7 +35,7 @@ a {
 	transition: all 0.3s linear 0s;
 }
 
-h1{
+h1 {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 }
@@ -50,7 +50,10 @@ span {
 input {
 	font-family: 'Open Sans', sans-serif;
 }
-
+h1 {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
 button {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -515,7 +518,10 @@ top: 5px;
 	height: auto;
 	width: 80%;
 	background-color: #fff;
-	padding: 30px;
+	padding-top: 20PX;
+	padding-bottom: 20PX;	
+	padding-left: 50px;
+	padding-right: 50PX;
 	border-radius: 5px;
 }
 
@@ -532,9 +538,11 @@ top: 5px;
 	flex-direction: column;
 }
 
+
+
 .stage--text {
-	height: 176px;
-	width: 250px;
+	height: 282px;
+	width: 381px;
 	margin-right: 60px;
 	border-radius: 6PX;
 	color: #fff;
@@ -580,9 +588,10 @@ top: 5px;
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
+	margin-bottom: 50px;
 }
 
-.price--list h5 {
+.price--list h3 {
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -598,7 +607,9 @@ top: 5px;
 	border-radius: 4px;
 	padding: 30px;
 	margin: 20px;
-	min-width: 250px; 
+	margin-right: 60px;
+	width: 381px;
+	height: 517px; 
 }
 
 .price--list__right-block {
@@ -606,6 +617,21 @@ top: 5px;
 	border-radius: 4px;
 	padding: 30px;
 	margin: 20px;
+	margin-left: 60px;
+	width: 381px;
+	height: 517px;
+}
+
+.price--list__right-block p {
+	font-size: 30px;
+	color: rgba(0, 178, 166, 1);
+	text-align: center;
+}
+
+.price--list__left-block p {
+	font-size: 30px;
+	color: rgba(0, 178, 166, 1);
+	text-align: center;
 }
 
 .little--banner {

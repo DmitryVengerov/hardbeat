@@ -33,6 +33,7 @@ p {
 	font-size: 16px;
 	margin: 0px 10px 20px 10px;
 	text-align: center;
+	font-family: 'Open sans', sans-serif;
 } 
 
 h1    ::selection, 
@@ -46,17 +47,21 @@ div   ::selection,
 header::selection{
 	background: rgba(173, 145,74,0.9); /* Safari */
 	color: #fff;
+	font-family: 'Open sans', sans-serif;
 }	
 
 a {
 	text-decoration: none;
 	color: #B28A24;
 	margin-bottom: 20px;
+	transition: all 0.3s linear 0s;
+	//font-family: 'Open Sans', sans-serif;
 	border-bottom: 1px solid #B28A24;
 }
 
 a:hover {
 	border-bottom: 1px dotted #B28A24;
+	//transition: all 0.3s linear 0s;
 }
 
 div {
@@ -98,8 +103,12 @@ img {
 	min-width: auto;
 	max-width: 400px;
 	transition: all 0.3s linear 0s;
+	-webkit-transform: translateY(0px);
 }
 
+.modal p {
+	margin: 10px;
+}
 .-active {
 	display: flex;
 	justify-content: center;
