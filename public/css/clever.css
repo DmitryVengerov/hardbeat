@@ -324,8 +324,8 @@ top: 5px;
 }
 
 .temp-img { margin: 15px; background-color: red; width: 30px;height: 30px; }
-.temp-ava {border-radius: 100px;border: 5px solid #5FC180;width: 120px;height: 120px; background-color: red;}
-.banner {margin-bottom: 50px;height: 400px;width: 100%; background-color: red;}
+.temp-ava { border-radius: 100px;border: 5px solid #5FC180;width: 120px;height: 120px; background-color: red;}
+.banner { margin-bottom: 50px;height: 400px;width: 100%; }
 @media only screen and (min-device-width : 360px) and (max-device-width : 667px) {
 
 	#parallelogram, #background-reviews {
@@ -696,14 +696,18 @@ top: 5px;
 
 .wrapper--box_price {
 	margin: 30px;
+	width: -webkit-fill-available;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 10px 40px 10px 40px;
-    border: 1px solid #00B2A6;
+    border: 2px solid #00B2A6;
     border-radius: 4px;
 }
 
 .wrapper--box_price p {
 	color: #00B2A6;
-	font-size: 18px;
+	font-size: 30px;
 }
 
 .something--annamed {
@@ -740,25 +744,47 @@ top: 5px;
 }
 
 .block {
-    width: 500px;
-    padding: 25px;
-    background: #fff;
+    width: 1000px;
+    height: 252px;
+    padding: 50px;
+    background:#E9F5F1;
     min-height: 100px;
     border-radius: 6px;
     position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
     margin: 10px 10px 10px 40px;
 }
 
 .block p {
-  margin: 0px 0px 10px 0px;  
+  margin: 0px 0px 10px 0px; 
+  font-size: 20px; 
+  text-transform: uppercase;
 }
 
 .block input {
-  background-color :rgba(0, 178, 166, .2);
+  background-color :#fff;
   color: #00857C;
   border: none;
-  padding: 10px;
+  height: 50px;
   outline: none;
+}
+
+.block input[type='mail'] {
+	border-radius: 20px;
+	font-size: 18px;
+}
+
+.block input[type='submit'] {
+	width: 130px;
+	border-radius: 20px;
+	    padding: 20px 10px 30px 10px;
+	color: #fff;  
+	
+    margin: 10px 0px 10px 0px;
+	text-transform: uppercase;
+	background-color: rgba(0, 178, 166, 1);
 }
 
 .block span.triangle {
@@ -766,20 +792,20 @@ top: 5px;
     height: 0;
     display: block;
     position: absolute;
-    top: 135px; left: 280px;
-    border-bottom: 15px solid #fff;
-    border-left: 15px solid transparent;
+    top: 244px; right: 200px;
+    border-bottom: 70px solid #E9F5F1;
+    border-left: 59px solid transparent;
     transform: rotate(270deg);
 }
 
 .message {
 	margin-top: 50px;
-    max-height: 200px !important;
+    height: 400px ;
     background-color: rgba(0, 178, 166, 1);
 }
 
 .message--pattern {
-	height: 200px;
+	height: 400px;
     width: auto;
     background-image: url(/icons/pattern-01.png);
     display: flex;

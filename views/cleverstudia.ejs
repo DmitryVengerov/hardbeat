@@ -31,38 +31,140 @@
 
     <div class="banner"></div>
 
-    
+    <div class='wrapper--center'>
+		<h1>БЛИЖАЙШИЕ КУРСЫ И МАСТЕР-КЛАССЫ</h1>
+		<p><button id='swither'>курсы</button>
+		<button id='swither'> мастер-класс</button></p>
+		<div class="wrapper">
+			<% data.hobbies.forEach(function(item){ %>	
+			<div class="contaiter">		
+				<div class="img--temp">
+					<div class="icon">    
+	        		</div>
+				</div>	
+				<div class="contaiter__header"><%= item %></div>
+				<div class="contaiter__data">
+				<% data.master.forEach(function(item1){ %>
+					<span ><%= item1 %></span>
+				<%})%>
+				<span >16 мест</span>
+				</div>
+			</div>
+			<%})%>
+		</div>	
+	</div>
 
+	<div style="    display:flex;align-items: center;
+	    justify-content: center;
+	    flex-direction: column;">
+		<button class="need--more" style="display: flex; margin-top: 20px;flex-wrap: column; ">Больше курсов</button>
+	</div>
 
-	<div id='background-reviews'><div id='parallelogram'></div></div>
-	<div class="wrapper">
-	  <div class="flex-container-reviews">
-	    <div class="flex-wrapper-reviews" >
-	      <img class = 'temp-ava'>
-	    </div>
-	    <div class="flex-wrapper-reviews">
-	      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное 
-	      </p> 
-	      <span>
-	        Вероника Щелкунова
-	      </span>
-	    </div>    
-	  </div>
+	<div style="    display:flex;align-items: center;
+	    justify-content: center;
+	    flex-direction: column;">
+		<h1  style="display: flex; margin-top: 50px;flex-wrap: column; ">Впечатления наших учеников</h1>
+	</div>
 
-	  <div class="flex-container-reviews ">
-	    <div class="flex-wrapper-reviews" >
-	      <img class = 'temp-ava'>
-	    </div>
-	    <div class="flex-wrapper-reviews">
-	      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное  
-	      </p>
-	      <span>
-	        Вероника Щелкунова
-	      </span>
-	    </div>    
-	  </div>
+	<div class="new--rewievs" style="margin-top: 50px;">
+		<div class="new--rewievs__flex">
+			<div class="wrapper">
+			  <div class="flex-container-reviews">
+			    <div class="flex-wrapper-reviews" >
+			      <img class = 'temp-ava'>
+			    </div>
+			    <div class="flex-wrapper-reviews">
+			      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное 
+			      </p> 
+			      <span>
+			        Вероника Щелкунова
+			      </span>
+			    </div>    
+			  </div>
+
+			  <div class="flex-container-reviews ">
+			    <div class="flex-wrapper-reviews" >
+			      <img class = 'temp-ava'>
+			    </div>
+			    <div class="flex-wrapper-reviews">
+			      <p>Хочу сказать огромное спасибо Виктории Самсоновой за курс по иллюстрации)я получила второе дыхание творческого вдохновения,каждое занятие сопровождалось интересными беседами о творчестве,своих подходах ... Искреннее спасибо за возможность предаться саморазвитию, открыть в себе новые возможности, не бояться делать что то новое и увлекательное  
+			      </p>
+			      <span>
+			        Вероника Щелкунова
+			      </span>
+			    </div>    
+			  </div>
+			</div>
+
+		</div>
 	</div>
 	
+	<div style="    display:flex;align-items: center;
+	    justify-content: center;
+	    flex-direction: column;">
+		<button class="need--more" style="display: flex; margin: 50px;flex-wrap: column; ">Расскажите нам о своих впечатлениях</button>
+	</div>
+
+	<div style="    display:flex;align-items: center;
+	    justify-content: center;
+	    flex-direction: column;">
+		<h2>Наша команда</h2>
+	</div>
+
+    <div style="background-color: #EFF5EE; height: 500px; width: auto;">
+    	
+    </div>
+	<div style="    display:flex;align-items: center;
+	    justify-content: center;
+	    flex-direction: column;">
+		<button class="need--more" style="display: flex; margin: 50px;flex-wrap: column; ">Давайте знакомиться</button>
+	</div>	  
+	
+
+	<div class='wrapper--center'>
+		<h1 style="margin-bottom: 50px;">Галлерея</h1>
+		<div class="wrapper">	
+			<div class="contaiter" style="height: 281px;width: 281px;">		
+			</div>
+			<div class="contaiter" style="height: 281px;width: 281px;">		
+			</div>
+			<div class="contaiter" style="height: 281px;width: 281px;">		
+			</div>
+			<div class="contaiter" style="height: 281px;width: 281px;">		
+			</div>
+			<div class="contaiter" style="height: 281px;width: 281px;">		
+			</div>
+			<div class="contaiter" style="height: 281px;width: 281px;">		
+			</div>
+		</div>
+		<button class="mess--button" style="margin-bottom: 50px;">Еще больше работ наших студентов</button>
+	</div>
+
+
+
+		<div class="message">	
+		<div class="message--pattern">
+			<div class="block">
+			    <p>
+			    Подпишитесь на наши обновления: много интересного и скидка 10% все подписавшимся
+			    </p>
+			    <div style="background-color: #fff; width: 900px;justify-content: flex-end; display: flex; padding-right: 10px;border-radius: 15px; min-height: 50px;">
+			    	<input type='mail' placeholder = 'Введите вашу почту' >
+			    </div>
+			    <input type='submit' value ='Подписаться'>
+			    <span class="triangle" ></span>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
 	<div class="footer-component">
 		<div class="footer area">
 			<div class="footer-left">
@@ -80,6 +182,7 @@
 			<span class="footer-item">© CLEVERSTUDIA 2016 все права защищены</span>
 		</div>
 	</div>
+
 
 </body>
 
