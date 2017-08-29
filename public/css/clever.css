@@ -247,7 +247,11 @@ outline: none;
 display: flex;
 color: #777;
 margin: 0;
-margin-right: 300px;
+//margin-right: 300px;
+}
+
+.footer-right {
+	justify-content: flex-end;
 }
 
 .flex-container-reviews {
