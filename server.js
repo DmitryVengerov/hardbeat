@@ -101,7 +101,7 @@ app.get('/art', function(req,res) {
 		],
 		master: [
 			"21.08.17",
-		]
+		],
 		image: [
 			'1.jpg',
 			'2.jpg',
