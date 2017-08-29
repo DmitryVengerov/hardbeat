@@ -38,6 +38,7 @@ a {
 h1 {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
+	font-weight: normal;
 }
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -298,7 +299,7 @@ align-items: center;
 }
 
 .wrapper-but {
-    margin-bottom: 40px;
+       margin-bottom: 30px;
 }
 
 .mess--button{
@@ -544,13 +545,13 @@ top: 5px;
 }
 
 .new--rewievs {
-	min-height: 400px;
+	min-height: 470px;
 	background-color: rgba(0, 178, 166, 1);
 	background-image: url(/img/pattern-01.png);
 }
 
 .new--rewievs__flex {
-	min-height: 400px;
+	min-height: 470px;
 	width: auto;
 	
 	background-image: url(/icons/pattern-01.png);
@@ -764,7 +765,7 @@ top: 5px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 20px;
+	//wpadding: 20px;
 }
 
 .review {
