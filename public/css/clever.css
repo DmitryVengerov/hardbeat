@@ -40,6 +40,10 @@ h1 {
 	text-transform: uppercase;
 	font-weight: normal;
 }
+
+h4 {
+	font-weight: normal;
+}
 p {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -99,7 +103,7 @@ button {
 	display: flex;
 	justify-content: flex-start;
 	font-size: 16px;
-	
+
 	color: #777;
 	margin: 22px;
 }
@@ -934,4 +938,15 @@ top: 5px;
 	justify-content: row;
 	margin: 20px;
 	order: 4;
+}
+
+.map {
+	height: 350px;
+    width: 350px;
+    background-color: red;
+    margin: 50px;
+}
+
+.contacts {
+
 }
