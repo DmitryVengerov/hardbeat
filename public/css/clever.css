@@ -234,7 +234,7 @@ line-height: 60px;
 
 .footer-input {
 line-height: 10px;
-background-color: rgba(0, 178, 166, 1);;
+background-color: ;
 border: none;
 opacity: initial;
 border-radius: 50pc;
@@ -417,6 +417,15 @@ top: 5px;
 	height: 600px;
 	width: 100%;
 	background: url(/img/bg-banner-2.png) 100% 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	//background-attachment: fixed;
+}
+
+.banner-art {
+	height: 600px;
+	width: 100%;
+	background: url(/img/art.png) 100% 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	//background-attachment: fixed;
@@ -889,8 +898,26 @@ top: 5px;
 	height: 400px;
     width: auto;
     background-image: url(/icons/pattern-01.png);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+}
+
+.content-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 1200px;
+}
+
+.uk-grid {
+	display: flex;
+	width: 20%;
+}
+.uk-width-1-5 {
+	justify-content: row;
+	margin: 20px;
+	order: 4;
 }

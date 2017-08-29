@@ -102,6 +102,16 @@ app.get('/art', function(req,res) {
 		master: [
 			"21.08.17",
 		]
+		image: [
+			'1.jpg',
+			'2.jpg',
+			'3.png',
+			'44.png',
+			'5.jpg',
+			'6.jpg',
+			'7.jpg',
+			'8.png'
+		]
 	};
 
 	var data1 = {
