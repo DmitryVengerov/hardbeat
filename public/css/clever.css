@@ -81,7 +81,7 @@ button {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
-	margin-left: auto;
+	//margin-left: auto;
 	//margin-right: auto;
 }
 
@@ -91,12 +91,15 @@ button {
 }
 
 .navbar-component > .navbar {
+	display: flex;
 	justify-content: space-between;
 }
 
 .navbar > .brand {
-	display: block;
+	display: flex;
+	justify-content: flex-start;
 	font-size: 16px;
+	
 	color: #777;
 	margin: 22px;
 }
@@ -161,6 +164,7 @@ transform: translateY(-8px) rotate(-45deg);
 .navbar > .list {
 display: none;
 flex-flow: row nowrap;
+flex-direction: flex-end;
 align-items: center;
 white-space: nowrap;
 }
@@ -548,6 +552,7 @@ top: 5px;
 	min-height: 470px;
 	background-color: rgba(0, 178, 166, 1);
 	background-image: url(/img/pattern-01.png);
+	 background-size: cover;
 }
 
 .new--rewievs__flex {
@@ -555,6 +560,7 @@ top: 5px;
 	width: auto;
 	
 	background-image: url(/icons/pattern-01.png);
+	 background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
