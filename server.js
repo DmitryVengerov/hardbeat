@@ -1,11 +1,10 @@
-
 var express = require('express'),
-	app     = express(),
-	http = require('http'),
-	path    = require('path'),
-	fs 		= require('fs'),
-	colors  = require('colors'),
-	_       = require('underscore')
+    app = express(),
+    http = require('http'),
+    path = require('path'),
+    fs = require('fs'),
+    colors = require('colors'),
+    _ = require('underscore')
 
 var stylus = require('stylus')
 var nib = require('nib')
@@ -25,104 +24,109 @@ app.use(stylus.middleware({
 }))
 */
 app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public/fonts'))
 
 app.get('/', function(req, res) {
-	res.render('index')
+    res.render('index')
 });
 
-app.get('/profile', function(req,res) {
-	var data = {
-		hobbies : [
-			'Детские занятия 7-12 лет',
-			'Детские занятия 4-6 лет',
-			'Живопись маслом',
-			'Интерьерный скетчинг',
-			"Фэшн иллюстрация",
-			"Графический дизайн",
-			"Базовый курс рисунка",
-			"Компьютерная иллюстрация",
-			"Основы каллиграфии"
-		],
-		master: [
-			"21.08.17",
-		]
-	};
+app.get('/profile', function(req, res) {
+    var data = {
+        hobbies: [
+            'Детские занятия 7-12 лет',
+            'Детские занятия 4-6 лет',
+            'Живопись маслом',
+            'Интерьерный скетчинг',
+            "Фэшн иллюстрация",
+            "Графический дизайн",
+            "Базовый курс рисунка",
+            "Компьютерная иллюстрация",
+            "Основы каллиграфии"
+        ],
+        master: [
+            "21.08.17",
+        ]
+    };
 
-	var data1 = {
-		title: "первый",
-		data : "20.02",
-		place: "16"
-	};
-	res.render('profile', { 
-		data : data, data1
-	}); 
-	//res.send('You are viewing the profile of '+ req.params.name );
+    var data1 = {
+        title: "первый",
+        data: "20.02",
+        place: "16"
+    };
+    res.render('profile', {
+        data: data,
+        data1
+    });
+    //res.send('You are viewing the profile of '+ req.params.name );
 });
 
-app.get('/cleverstudia', function(req,res){
-	var data = {
-		hobbies : [
-			'Детские занятия 7-12 лет',
-			'Детские занятия 4-6 лет',
-			'Живопись маслом',
-			'Интерьерный скетчинг',
-			"Фэшн иллюстрация",
-			"Графический дизайн",
-			"Базовый курс рисунка",
-			"Компьютерная иллюстрация",
-			"Основы каллиграфии"
-		],
-		master: [
-			"21.08.17",
-		]
-	};
+app.get('/cleverstudia', function(req, res) {
+    var data = {
+        hobbies: [
+            'Детские занятия 7-12 лет',
+            'Детские занятия 4-6 лет',
+            'Живопись маслом',
+            'Интерьерный скетчинг',
+            "Фэшн иллюстрация",
+            "Графический дизайн",
+            "Базовый курс рисунка",
+            "Компьютерная иллюстрация",
+            "Основы каллиграфии"
+        ],
+        master: [
+            "21.08.17",
+        ]
+    };
 
-	var data1 = {
-		title: "первый",
-		data : "20.02",
-		place: "16"
-	};
-	res.render('cleverstudia', { 
-		data : data, data1});
+    var data1 = {
+        title: "первый",
+        data: "20.02",
+        place: "16"
+    };
+    res.render('cleverstudia', {
+        data: data,
+        data1
+    });
 });
 
-app.get('/art', function(req,res) {
-	var data = {
-		hobbies : [
-			'Детские занятия 7-12 лет',
-			'Детские занятия 4-6 лет',
-			'Живопись маслом',
-			'Интерьерный скетчинг',
-			"Фэшн иллюстрация",
-			"Графический дизайн",
-			"Базовый курс рисунка",
-			"Компьютерная иллюстрация",
-			"Основы каллиграфии"
-		],
-		master: [
-			"21.08.17",
-		],
-		image: [
-			'1.jpg',
-			'2.jpg',
-			'3.png',
-			'44.png',
-			'5.jpg',
-			'6.jpg',
-			'7.jpg',
-			'8.png'
-		]
-	};
+app.get('/art', function(req, res) {
+    var data = {
+        hobbies: [
+            'Детские занятия 7-12 лет',
+            'Детские занятия 4-6 лет',
+            'Живопись маслом',
+            'Интерьерный скетчинг',
+            "Фэшн иллюстрация",
+            "Графический дизайн",
+            "Базовый курс рисунка",
+            "Компьютерная иллюстрация",
+            "Основы каллиграфии"
+        ],
+        master: [
+            "21.08.17",
+        ],
+        image: [
+            '1.jpg',
+            '2.jpg',
+            '3.png',
+            '44.png',
+            '5.jpg',
+            '6.jpg',
+            '7.jpg',
+            '8.png'
+        ]
+    };
 
-	var data1 = {
-		title: "первый",
-		data : "20.02",
-		place: "16"
-	};
-	res.render('art', { 
-		data : data, data1
-	}); 
-	//res.send('You are viewing the profile of '+ req.params.name );
+    var data1 = {
+        title: "первый",
+        data: "20.02",
+        place: "16"
+    };
+    res.render('art', {
+        data: data,
+        data1
+    });
+    //res.send('You are viewing the profile of '+ req.params.name );
 });
 
 //app.listen(3000, '127.0.0.1');
