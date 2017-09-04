@@ -82,7 +82,7 @@ button {
     }
 }
 
-@media  screen and (max-width: 1580px) {
+@media  screen and (min-width: 1580px) {
     .banner {
         height: 635px !important;
     }
@@ -456,7 +456,7 @@ button {
 
 
 .banner {
-    height: 400px;
+    height: 510px;
     width: 100%;
     background: url(/img/banner.jpg) 100% 100%;
     background-repeat: no-repeat;
