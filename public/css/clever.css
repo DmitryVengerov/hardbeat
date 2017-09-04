@@ -319,8 +319,7 @@ button {
 }
 
 .wrapper-but {
-    margin: auto;
-    margin-top: 430px;
+
 }
 
 .mess--button {
@@ -1337,6 +1336,7 @@ button {
 
 }
 
-.landing--button {
-    
+.landung--button {
+    margin: auto; 
+    margin-top: 430px; 
 }
