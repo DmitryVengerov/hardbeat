@@ -82,6 +82,12 @@ button {
     }
 }
 
+@media (max-width: 1600px) {
+    .banner {
+        height: 635px !important;
+    }
+}
+
 @media (min-width: 992px) {
     .area {
         width: 970px;
@@ -1338,5 +1344,4 @@ button {
 
 .landung--button {
     margin: auto; 
-    margin-top: 450px; 
-}
+    margin-top: 450px
