@@ -448,9 +448,11 @@ button {
 .banner {
     height: 600px;
     width: 100%;
-    background: url(/img/bg-banner-2.png) 100% 100%;
+    background: url(/img/background--banner.jpg) 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover; //background-attachment: fixed;
+    background-size: 100%;
+    background-position: center; 
+    //background-attachment: fixed;
 }
 
 .banner-art {
