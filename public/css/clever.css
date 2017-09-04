@@ -318,7 +318,10 @@ button {
     border-radius: 3px; //margin-bottom: 150px;
 }
 
-.wrapper-but {}
+.wrapper-but {
+    margin: auto;
+    margin-top: 430px;
+}
 
 .mess--button {
     background-color: #00B2A6;
@@ -398,7 +401,8 @@ button {
 }
 
 .banner {
-    height: 400px;
+    display: flex;
+    height: 500px !important;
     width: 100%;
 }
 
@@ -451,7 +455,7 @@ button {
     background: url(/img/banner.jpg) 100% 100%;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center; 
+        background-position: 10% 20%;
     //background-attachment: fixed;
 }
 
@@ -961,14 +965,12 @@ button {
 
 
 .uk-width-1-5 {
-
     margin: 1em;
-
     order: 4;
     width: 20%;
     height: 20%;
     filter: grayscale(100%);
-}
+}    background-position: 10% 20%;
 
 .uk-width-1-5:hover {
     filter: grayscale(0%);
@@ -1328,4 +1330,13 @@ button {
 .contact--map {
     width: 448px;
     height: 350px;
+}
+
+.button--link {
+    background-color: #fff !important;
+
+}
+
+.landing--button {
+    
 }
