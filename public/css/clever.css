@@ -90,7 +90,6 @@ button {
 
 @media (min-width: 1200px) {
     .area {
-
         width: 1140px;
     }
 }
@@ -239,7 +238,7 @@ button {
 .navbar>.list>.item.-link:hover,
 .navbar>.list>.item.-link:focus {
     color: #333333;
-    border-bottom-color: #5fc180;
+    border-bottom-color:#00B2A6;
 }
 
 
@@ -367,12 +366,11 @@ button {
     height: 300px;
     background: slategray;
     transform: skewY(-1.5deg);
-    background-color: #5FC180;
+    background-color:#00B2A6;
     z-index: 1;
 }
 
 #background-reviews {
-
     position: absolute;
     width: 100%;
     height: 300px;
@@ -992,8 +990,8 @@ button {
 .card-c {
     background-color: #E9F5F1;
     height: auto!important;
-    width: 352px !important;
-    margin: 40px;
+    width: 300px !important;
+    margin: 30px;
     border-radius: 20px;
 }
 
@@ -1015,59 +1013,59 @@ button {
     border-radius: 20px 20px 0px 0px;
     position: absolute;
     background-repeat: no-repeat;
-    width: 352px;
-    height: 233px;
+    width: 300px;
+    height: 170px;
 }
 
 .card--holding__icon-babybig {
     background: url(/icons/big-baby.svg);
-    background-size: 120px;
+    background-size: 80px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
-    height: 188px;
-    width: 188px;
+    height: 108px;
+    width: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 115px;
     position: absolute;
     background-color: white;
-    border: 5px solid #00B2A6;
+    border: 3px solid #00B2A6;
 }
 
 .card--holding__icon-baby {
     background: url(/icons/baby.svg);
-    background-size: 120px;
+    background-size: 80px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
-    height: 188px;
-    width: 188px;
+    height: 108px;
+    width: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 115px;
     position: absolute;
     background-color: white;
-    border: 5px solid #00B2A6;
+    border: 3px solid #00B2A6;
 }
 
 .card--holding__icon-tassel {
     background: url(/icons/тюбик.svg);
-    background-size: 120px;
+    background-size: 80px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
-    height: 188px;
-    width: 188px;
+    height: 108px;
+    width: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 115px;
     position: absolute;
     background-color: white;
-    border: 5px solid #00B2A6;
+    border: 3px solid #00B2A6;
 }
 
 .card--holding__icon-pen2 {
@@ -1076,57 +1074,57 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
-    height: 188px;
-    width: 188px;
+    height: 108px;
+    width: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 115px;
     transform: rotate(45deg);
     position: absolute;
     background-color: white;
-    border: 5px solid #00B2A6;
+    border: 3px solid #00B2A6;
 }
 
 .card--holding__icon-marker {
     background: url(/icons/marker.svg);
-    background-size: 50px;
+    background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
-    height: 188px;
-    width: 188px;
+    height: 108px;
+    width: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 115px;
     transform: rotate(45deg);
     position: absolute;
     background-color: white;
-    border: 5px solid #00B2A6;
+    border: 3px solid #00B2A6;
 }
 
 .card--holding__icon-pen {
     background: url(/icons/pensil.svg);
-    background-size: 70px;
+    background-size: 50px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
-    height: 188px;
-    width: 188px;
+    height: 108px;
+    width: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 115px;
     transform: rotate(45deg);
     position: absolute;
     background-color: white;
-    border: 5px solid #00B2A6;
+    border: 3px solid #00B2A6;
 }
 
 .card--holding__icon-pen2 {
     background: url(/icons/pensil-two.svg);
-    background-size: 120px;
+    background-size: 115px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
@@ -1135,10 +1133,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px; //transform: rotate(45deg);
+    margin-top: 115px; //transform: rotate(45deg);
     position: absolute;
     background-color: white;
-    border: 5px solid #00B2A6;
+    border: 3px solid #00B2A6;
 }
 
 
@@ -1146,24 +1144,25 @@ button {
 .card--data-c {
     display: flex;
     flex-direction: column;
-    margin-top: 340px;
+    margin-top: 240px;
     text-align: center;
 }
 
 .card--data__child-c {
     font-size: 19px;
+    margin: 5px;
 }
 
 .card--data__info-c {
     display: flex;
     margin: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     justify-content: space-between;
 }
 
 .card--data__info-c p {
     display: flex;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .card--data__info-left-c {
@@ -1244,9 +1243,9 @@ button {
 }
 
 .card-img {
-    margin: 15px; //background-color: red;
-    width: 40px;
-    height: 40px;
+    margin: 15px 15px 15px 0px; 
+    width: 25px;
+    height: 25px;
 }
 
 .logo--electra {
@@ -1284,7 +1283,7 @@ button {
 }
 
 .conntacts--panel h2 {
-	font-family: OpenSans-Regular;
+    font-family: OpenSans-Regular;
     color: black;
     font-size: 24px;
     line-height: 30px;
@@ -1319,12 +1318,12 @@ button {
 }
 
 .contact--icons {
-	height: 30px;
-	margin-bottom: 60px;
-	display: flex;
+    height: 30px;
+    margin-bottom: 60px;
+    display: flex;
 }
 
 .contact--map {
-	width: 448px;
-	height: 350px;
+    width: 448px;
+    height: 350px;
 }

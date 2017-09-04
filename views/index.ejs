@@ -1,68 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Welcome</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name='theme-color' content="#B28A24">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name='theme-color' content="#B28A24">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
+
 <body>
-
-  <header>
-    <span class="js--logo"></span>
-    <a class="name" href="https:/www.vk.com/vengerov1">Vengerov Dmitr!j</a>
-  </header>
-
-	<div class="wrapper">
-  	<p>You will find a website better... or not... who cares?</p>
-  	<a href="/cleverstudia">My Work!</a>
-      <img class='logo-brand' src="/img/logo.jpg">
-    
-  	<button data-collapse data-target="#modal" class="button-master">About me</button>
-    <div id="modal" class="modal" role='modal'>
-    <div class="modal__inner">
-          <p>My name is Dmitrij and iam a developer from Saint-Petersburg</p>   
-    </div>  
-  </div>
-  </div>
-
-	
-
+    <header>
+        <a class="name" href="https:/www.vk.com/vengerov1">
+            </div>Vengerov Dmitr!j</a>
+    </header>
+    <div class="wrapper">
+        <p>You will find a website better... or not... who cares?</p>
+        <a href="/cleverstudia">My Work!</a>
+        <div class='logo-brand'></div>
+        <button data-collapse data-target="#modal" class="button-master">About me</button>
+        <hr>
+        <div id="modal" class="modal" role='modal'>
+            <div class="modal__inner">
+                <p>My name is Dmitrij and iam a developer from Saint-Petersburg</p>
+            </div>
+        </div>
+    </div>
 </body>
+<script type="text/javascript" src='/js/app.js'></script>
 
-<script type="text/javascript">
-
-(function() {
-  var getTriggerElement = function(el) {
-    var isCollapse = el.getAttribute('data-collapse');
-    if (isCollapse !== null) {
-      console.log(isCollapse);
-      return el;
-    } else {
-      var isParentCollapse = el.parentNode.getAttribute('data-collapse');
-      console.log(parentNode);
-      return (isParentCollapse !== null) ? el.parentNode : undefined;
-    }
-
-  };
-  // A handler for click on toggle button
-  var collapseClickHandler = function(event) {  
-  	var triggerEl = getTriggerElement(event.target);
-    console.log(triggerEl.value)
-    if (triggerEl === undefined) {
-      event.preventDefault();
-      return false;
-    }
-    // If the target element exists
-    var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));
-    if (targetEl) {
-      //triggerEl.classList.toggle('-active');
-      targetEl.classList.toggle('-active');
-    }
-  };
-  // Delegated event
-  document.addEventListener('click', collapseClickHandler, false);
-})(document, window);
-
-</script>
 </html>

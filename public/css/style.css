@@ -30,6 +30,14 @@ h1 {
     text-align: center;
 }
 
+hr {
+    width: 376px;
+    margin: 10px;
+    color: transparent;
+    border-style: dotted;
+    border-bottom: 1px dotted #B28A24;
+}
+
 p {
     font-size: 16px;
     margin: 0px 10px 20px 10px;
@@ -80,6 +88,8 @@ img {
     line-height: 40px;
     border-bottom: 1px solid #B28A24;
     cursor: pointer;
+    display: initial;
+
 }
 
 .name::hover {
@@ -146,23 +156,37 @@ img {
     height: 202px;
     border-radius: 100px;
     border-bottom: 5px solid #B28A24;
-    box-shadow: 1px 1px 30px #B28A24; //background-image: url(/img/logo.svg);
+    box-shadow: 1px 1px 30px #B28A24;
+background: url(/img/logo.jpg);
+    background-size: 206px;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 5px 15px 0 rgba(178, 138, 36, .1), 0 15px 35px 0 rgba(178, 138, 36, .5)
 }
 
 .vk--logo__link {
-    width: 30px;
+    width: 40px;
     height: 30px;
-    background-image: url('/icons/vk.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/icons/vk.svg);
 }
 
 .js--logo {
-    width: 30px;
-    height: 30px;
-    background-image: url(/icons/js.svg);
+
+
+    background: url(/icons/js.svg);
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+.logo {
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    background: red;
+}
+
+@media only screen and (max-device-width: 375px) and (max-device-width: 667px) {
     body {
         height: 100%;
     }
@@ -170,4 +194,6 @@ img {
     p {
         margin: 0px 10px 20px 10px;
     }
+
+    
 }

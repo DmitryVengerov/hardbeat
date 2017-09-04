@@ -25,6 +25,7 @@ app.use(stylus.middleware({
 */
 app.use(express.static(__dirname + '/public'))
 app.use(express.static(__dirname + '/public/fonts'))
+app.use(express.static(__dirname + '/public/js'))
 
 app.get('/', function(req, res) {
     res.render('index')
@@ -129,8 +130,8 @@ app.get('/art', function(req, res) {
     //res.send('You are viewing the profile of '+ req.params.name );
 });
 
-//app.listen(3000, '127.0.0.1');
-app.listen(process.env.PORT);
+app.listen(3000, '127.0.0.1');
+//app.listen(process.env.PORT);
 
 
 /*
