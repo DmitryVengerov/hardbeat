@@ -86,6 +86,10 @@ button {
     .banner {
         height: 635px !important;
     }
+
+    .landung--button {
+        margin-top: 550px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -407,7 +411,7 @@ button {
 
 .banner {
     display: flex;
-    height: 510px  !important;
+    height: 510px;
     width: 100%;
 }
 
