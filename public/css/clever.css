@@ -446,9 +446,9 @@ button {
 
 
 .banner {
-    height: 600px;
+    height: 400px;
     width: 100%;
-    background: url(/img/background--banner.jpg) 100% 100%;
+    background: url(/img/banner.jpg) 100% 100%;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center; 
