@@ -82,7 +82,7 @@ button {
     }
 }
 
-@media (min-width: 1900px) {
+@media screen and (max-width:1600px) and( min-width:1400px) {
     .banner {
         height: 635px !important;
     }
