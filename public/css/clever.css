@@ -401,7 +401,7 @@ button {
 
 .banner {
     display: flex;
-    height: 500px !important;
+    height: 510px  !important;
     width: 100%;
 }
 
@@ -1338,5 +1338,5 @@ button {
 
 .landung--button {
     margin: auto; 
-    margin-top: 430px; 
+    margin-top: 450px; 
 }
