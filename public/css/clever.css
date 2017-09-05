@@ -252,13 +252,40 @@ button {
     border-bottom-color:#00B2A6;
 }
 
+.menu:hover .button--link{
+    background-color:red;
+}
+
+.menu:focus .button--link {
+   background-color: red;
+}
+
+.dropdown__item {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown__item  a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
 
 .footer-component {
     background-color: #17342f;
 }
 
 .footer {
-    display: flex; //justify-content: space-between;
+    display: flex; 
 }
 
 .footer-component>.footer {
@@ -400,6 +427,13 @@ button {
     margin: 15px;
     background-color: red;
     width: 30px;
+    height: 30px;
+}
+
+.youtube-img {
+    margin: 15px;
+    background-color: red;
+    width: 40px;
     height: 30px;
 }
 
@@ -1116,6 +1150,11 @@ button {
     position: absolute;
     background-color: white;
     border: 3px solid #00B2A6;
+    cursor: pointer;
+}
+
+.card--holding__icon-marker::focus {
+    transform: rotate(45deg);
 }
 
 .card--holding__icon-pen {
@@ -1204,10 +1243,20 @@ button {
     margin: 17px;
 }
 
+.footer--icon__youtube {
+    background: url(/img/icon--youtube.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    margin-right: 10px;
+ fill: rgba(0, 168, 166, 1);
+}
+
 .footer--icon__map {
     background: url(/icons/footer--map.svg);
     background-repeat: no-repeat;
     background-position: center;
+    fill: rgba(0, 168, 166, 1);
 }
 
 .footer--icon__phone {
@@ -1340,6 +1389,8 @@ button {
 .contact--map {
     width: 448px;
     height: 350px;
+    padding: 0px;
+    background-color: rgba(234, 226, 226, 0.7);
 }
 
 .button--link {
@@ -1350,3 +1401,99 @@ button {
 .landung--button {
     margin: auto; 
     margin-top: 450px
+}
+
+.workPlace {
+    width: 220px;
+}
+
+.modalSubscription {
+    background-color: rgba(234, 226, 226, 0.7);
+    z-index: 110;
+    display: flex;
+    height: 70px;
+    width: 100%;
+}
+
+.modalSubscription__left {
+        padding-left: 25px;
+    margin: 0;
+    margin-right: auto
+}
+
+.modalSubscription__right {
+    justify-content: flex-end;
+    line-height: 70px;
+    margin-right: 25px;
+    display: flex;
+}
+
+.modalSubscription__p {
+    line-height: all;
+    margin: auto;
+    font-size: 19px;
+    font-style: italic;
+    line-height: 70px;
+}
+
+.modalSubscription__input {
+    display: flex;
+    height: 40px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: #fff;
+    margin: auto;
+    margin-right: 10px;
+
+}
+
+.modalSubscription__submit {
+
+}
+
+.modalSubscription__input--mail {
+    margin: auto;
+    border: none;
+
+}
+
+.modalSubscription__input--submit {
+    text-align: center;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    padding: 5px 50px;
+    background-color: rgba(0, 178, 166, 1);
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 6px 0px rgba(0, 178, 166, 0.3);
+}
+
+.modalSubscription__remove--button {
+    height: 50px;
+    margin: auto;
+    width: 40px;
+    margin-left: 30px;
+    margin: auto;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(/img/icon--remove.png);
+}
+
+
+.brand__cleverstudia {
+    background-image: url(/img/logotype.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    height: 64px;
+    width: 200px;
+    line-height: 64px;
+    margin: auto;
+    display: block;
+}
