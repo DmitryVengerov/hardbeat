@@ -469,7 +469,7 @@ button {
 
 .banner {
     display: flex;
-    height: calc(100vh - 150px) !important;
+    height: calc(100vh - 75px);
     width: 100%;
 }
 
@@ -517,12 +517,12 @@ button {
 
 
 .banner {
-    height: 510px;
+    height: calc(100vh - 155px);
     width: 100%;
     background: url(/img/banner.jpg) 100% 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
-        background-position: 10% 20%;
+    background-size: cover;
+    background-position: 10% 20%;
     //background-attachment: fixed;
 }
 
