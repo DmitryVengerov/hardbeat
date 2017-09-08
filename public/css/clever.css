@@ -1013,7 +1013,7 @@ button {
 .message--pattern {
     height: 400px;
     width: auto;
-    background-image: url(/icons/pattern-01.png);
+    //background-image: url(/icons/pattern-01.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -1595,7 +1595,6 @@ just for appearance; change whatever you want
 
 .teacher--block__photo--p__about {
     font-size: 14px;
-    font-style: italic;
     text-align: center;
     color: rgb(107, 107, 107);
 }
